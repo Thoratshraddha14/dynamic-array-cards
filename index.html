@@ -7,11 +7,20 @@
     <style>
         .container-frd{
            width: 1500px;
-           height: 500px;
-           margin: 10px auto;
-           background-color: #f3e2ef;
+           margin: 20px auto;
+           padding: 20px 50px;
+           background-color: #f8f4f7;
            border: 5px double #990577;
-           
+        }
+        .frd-list{
+            border: 1px solid #fce4f6;
+            background-color: #f1d5ece0;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 20px;
+            font-size: 25px;
+            text-align: center;
+            box-shadow: 5px 5px 5px #92788b;
         }
     </style>
 </head>
@@ -23,7 +32,7 @@
 
         const friendslist = document.getElementById("friends-list");
         for(let i=0;i<friends.length;i++){
-            friendslist.innerHTML=friendslist.innerHTML+`<div>Hii ${friends[i]}</div>`;
+            friendslist.innerHTML=friendslist.innerHTML+`<div class="frd-list">Hii ${friends[i]}</div>`;
         }
     </script>
 </body>
