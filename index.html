@@ -17,9 +17,14 @@
 </head>
 <body>
     <h1><marquee scrollamount="10">Friends Name List Using An Array</marquee></h1>
-    <div class="container-frd"> </div>
+    <div class="container-frd" id="friends-list"> </div>
     <script>
         const friends = ["Saish","Shraddha","Rupali","Sharvi","Kunal","Onkar"];
+
+        const friendslist = document.getElementById("friends-list");
+        for(let i=0;i<friends.length;i++){
+            friendslist.innerHTML=friendslist.innerHTML+`<div>Hii ${friends[i]}</div>`;
+        }
     </script>
 </body>
 </html>
